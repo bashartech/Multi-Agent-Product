@@ -193,9 +193,12 @@ const Header = () => {
               Contact
             </a>
 
+            <Link href={"/chat"}>
             <button className="px-6 py-2 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700 shadow-lg shadow-red-600/40 hover:shadow-xl hover:shadow-red-600/60 transition-all duration-300">
               Get Started
             </button>
+            </Link>
+
           </div>
         </div>
       )}
