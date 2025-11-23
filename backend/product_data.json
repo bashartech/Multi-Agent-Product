@@ -1,0 +1,38 @@
+{ 
+
+ "flight_info" : [
+    {
+        "id" : 1,
+        "timing" : "8pm",
+        "city" : "Dubai",
+        "plane" : "Emirates",
+        "ticket_price" : "500$",
+        "date": " 10 October 2025"
+    },
+    {
+        "id" : 2,
+        "timing" : "5pm",
+        "city" : "Colombo",
+        "plane" : "Emirates",
+        "ticket_price" : "400$",
+        "date": "12 October 2025 "
+    },
+    {
+        "id" : 3,
+        "timing" : "1pm",
+        "city" : "Toronto",
+        "plane" : "PIA",
+        "ticket_price" : "900$",
+        "date": "8 October 2025 "
+    },
+    {
+        "id" : 4,
+        "timing" : "8am",
+        "city" : "Jedda",
+        "plane" : "Saudia Arabia",
+        "ticket_price" : "700$",
+        "date": "11 October 2025  "
+    }
+
+]
+}
