@@ -140,6 +140,10 @@
 //   );
 // }
 
+
+
+
+
 "use client"
 
 import { useState, useRef, useEffect } from "react"
@@ -167,7 +171,7 @@ export default function ChatPage() {
     setMessages([
       {
         id: "1",
-        text: `Hello! I'm your ${agentId.replace("-", " ")} agent. How can I assist you today?`,
+        text: `Hello! I'm your ${agentId.replace("-", " ")} specialist. How can I assist you with your health concerns today?`,
         sender: "agent",
         timestamp: new Date(),
       },
@@ -194,10 +198,8 @@ export default function ChatPage() {
     setIsLoading(true)
 
     try {
-      // Get backend URL from environment variable or use default
       const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000"
 
-      // Send to your FastAPI backend
       const response = await fetch(`${backendUrl}/chat`, {
         method: "POST",
         headers: {
@@ -242,9 +244,8 @@ export default function ChatPage() {
   return (
     <ChatLayout sidebar={<ChatSidebar />}>
       <div className="flex flex-col h-full bg-slate-950">
-        {/* Header */}
-        <div className="border-b border-red-600/20 bg-slate-950 shadow-xl shadow-red-600/10 px-6 py-4">
-          <h2 className="text-xl font-bold text-white capitalize">{agentId.replace("-", " ")} Agent</h2>
+        <div className="border-b border-cyan-500/20 bg-slate-950 shadow-xl shadow-cyan-500/10 px-6 py-4">
+          <h2 className="text-xl font-bold text-white capitalize">{agentId.replace("-", " ")} Specialist</h2>
           <p className="text-sm text-gray-400">Online and ready to help</p>
         </div>
 
@@ -255,11 +256,11 @@ export default function ChatPage() {
           ))}
           {isLoading && (
             <div className="flex justify-start">
-              <div className="max-w-xs px-4 py-3 rounded-lg bg-slate-800 border border-red-600/20 shadow-lg shadow-red-600/10">
+              <div className="max-w-xs px-4 py-3 rounded-lg bg-slate-800 border border-cyan-500/20 shadow-lg shadow-cyan-500/10">
                 <div className="flex space-x-2">
-                  <div className="w-2 h-2 bg-red-500 rounded-full animate-bounce"></div>
-                  <div className="w-2 h-2 bg-red-500 rounded-full animate-bounce delay-100"></div>
-                  <div className="w-2 h-2 bg-red-500 rounded-full animate-bounce delay-200"></div>
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce"></div>
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce delay-100"></div>
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full animate-bounce delay-200"></div>
                 </div>
               </div>
             </div>

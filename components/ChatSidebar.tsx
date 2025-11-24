@@ -124,78 +124,79 @@
 import Link from "next/link"
 import { useSearchParams } from "next/navigation"
 import {
-  FaRobot,
-  FaPlane,
-  FaGraduationCap,
-  FaMedkit,
-  FaBriefcase,
-  FaCode,
-  FaSearch,
-  FaUser,
-  FaBuilding,
+  FaHeartbeat,
+  FaSpa,
+  FaAssistiveListeningSystems,
+  FaEye,
+  FaXRay,
+  FaTooth,
+  FaBaby,
+  FaPrescriptionBottle,
+  FaApple,
+  FaUserMd,
 } from "react-icons/fa"
 
 const agents = [
   {
-    name: "BUSINESS PLANNER Agent",
-    icon: <FaRobot size={18} />,
-    link: "/chat?agent=business-planner",
-    id: "business-planner",
+    name: "Cardiologist Agent",
+    icon: <FaHeartbeat size={18} />,
+    link: "/chat?agent=cardiologist-specialist",
+    id: "cardiologist-specialist",
   },
   {
-    name: "FLIGHT BOOKING AGENT",
-    icon: <FaPlane size={18} />,
-    link: "/chat?agent=flight-booking",
-    id: "flight-booking",
+    name: "Dermatologist Agent",
+    icon: <FaSpa size={18} />,
+    link: "/chat?agent=dermatologist-specialist",
+    id: "dermatologist-specialist",
   },
   {
-    name: "TUTOR AGENT",
-    icon: <FaGraduationCap size={18} />,
-    link: "/chat?agent=tutor",
-    id: "tutor",
+    name: "ENT Specialist Agent",
+    icon: <FaAssistiveListeningSystems size={18} />,
+    link: "/chat?agent=ent-specialist",
+    id: "ent-specialist",
   },
   {
-    name: "MEDICAL AGENT",
-    icon: <FaMedkit size={18} />,
-    link: "/chat?agent=medical",
-    id: "medical",
+    name: "Eye Specialist Agent",
+    icon: <FaEye size={18} />,
+    link: "/chat?agent=eye-specialist",
+    id: "eye-specialist",
   },
   {
-    name: "HEALTH CARE AGENT",
-    icon: <FaMedkit size={18} />,
-    link: "/chat?agent=health-care",
-    id: "health-care",
+    name: "Orthopedic Agent",
+    icon: <FaXRay size={18} />,
+    link: "/chat?agent=orthopedic-specialist",
+    id: "orthopedic-specialist",
   },
   {
-    name: "JOB SEARCH AGENT",
-    icon: <FaBriefcase size={18} />,
-    link: "/chat?agent=job-search",
-    id: "job-search",
+    name: "Dentist Agent",
+    icon: <FaTooth size={18} />,
+    link: "/chat?agent=dentist-specialist",
+    id: "dentist-specialist",
   },
   {
-    name: "CODE REVIEW AGENT",
-    icon: <FaCode size={18} />,
-    link: "/chat?agent=code-review",
-    id: "code-review",
+    name: "Pediatrician Agent",
+    icon: <FaBaby size={18} />,
+    link: "/chat?agent=pediatrician-specialist",
+    id: "pediatrician-specialist",
   },
   {
-    name: "DEEP SEARCH AGENT",
-    icon: <FaSearch size={18} />,
-    link: "/chat?agent=deep-search",
-    id: "deep-search",
+    name: "Pharmacy Assistant Agent",
+    icon: <FaPrescriptionBottle size={18} />,
+    link: "/chat?agent=pharmacy-assistant",
+    id: "pharmacy-assistant",
   },
   {
-    name: "PERSONAL LIFE MANAGER",
-    icon: <FaUser size={18} />,
-    link: "/chat?agent=personal-life-manager",
-    id: "personal-life-manager",
+    name: "Nutritionist Agent",
+    icon: <FaApple size={18} />,
+    link: "/chat?agent=nutritionist-specialist",
+    id: "nutritionist-specialist",
   },
-  // {
-  //   name: "EDUCATION AUTOMATION",
-  //   icon: <FaBuilding size={18} />,
-  //   link: "/chat?agent=education-automation",
-  //   id: "education-automation",
-  // },
+  {
+    name: "General Physician Agent",
+    icon: <FaUserMd size={18} />,
+    link: "/chat?agent=general-physician",
+    id: "general-physician",
+  },
 ]
 
 const ChatSidebar = () => {
@@ -206,8 +207,8 @@ const ChatSidebar = () => {
     <div className="flex flex-col h-full p-6 bg-gradient-to-b from-slate-900 to-slate-950">
       {/* Header */}
       <div className="mb-8">
-        <h2 className="text-2xl font-bold text-white mb-2">Agents</h2>
-        <div className="h-1 w-12 bg-red-600 rounded shadow-lg shadow-red-600/50"></div>
+        <h2 className="text-2xl font-bold text-white mb-2">Medical Specialists</h2>
+        <div className="h-1 w-12 bg-cyan-500 rounded shadow-lg shadow-cyan-500/50"></div>
       </div>
 
       {/* Agents List */}
@@ -219,18 +220,18 @@ const ChatSidebar = () => {
                 <div
                   className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 cursor-pointer group ${
                     activeAgentId === agent.id
-                      ? "bg-red-600/20 text-red-400 border-l-2 border-red-600 shadow-lg shadow-red-600/20"
+                      ? "bg-cyan-500/20 text-cyan-300 border-l-2 border-cyan-500 shadow-lg shadow-cyan-500/20"
                       : "text-gray-400 hover:text-white hover:bg-slate-800/50 border-l-2 border-transparent"
                   }`}
                 >
                   <div
-                    className={`flex-shrink-0 ${activeAgentId === agent.id ? "text-red-500" : "text-gray-500 group-hover:text-red-500"}`}
+                    className={`flex-shrink-0 ${activeAgentId === agent.id ? "text-cyan-400" : "text-gray-500 group-hover:text-cyan-400"}`}
                   >
                     {agent.icon}
                   </div>
                   <span className="text-sm font-medium truncate">{agent.name}</span>
                   {activeAgentId === agent.id && (
-                    <div className="ml-auto w-2 h-2 bg-red-500 rounded-full animate-pulse shadow-lg shadow-red-500/60"></div>
+                    <div className="ml-auto w-2 h-2 bg-cyan-400 rounded-full animate-pulse shadow-lg shadow-cyan-400/60"></div>
                   )}
                 </div>
               </Link>
@@ -242,7 +243,7 @@ const ChatSidebar = () => {
       {/* Footer */}
       <Link href="/">
         <div className="mt-8 pt-6 border-t border-slate-800">
-          <button className="w-full px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white font-semibold transition-all duration-200 shadow-lg shadow-red-600/40 hover:shadow-xl hover:shadow-red-600/60">
+          <button className="w-full px-4 py-2 rounded-lg bg-cyan-500 hover:bg-cyan-600 text-white font-semibold transition-all duration-200 shadow-lg shadow-cyan-500/40 hover:shadow-xl hover:shadow-cyan-500/60">
             Back to Home
           </button>
         </div>

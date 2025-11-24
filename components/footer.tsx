@@ -5,41 +5,42 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-black border-t border-red-600/20 shadow-2xl shadow-red-600/10 mt-20">
-      <div className="container mx-auto px-6 py-12">
+    <footer className="bg-slate-950 border-t border-cyan-500/20 shadow-2xl shadow-cyan-500/5 mt-0">
+      <div className="container mx-auto px-6 py-10">
         {/* Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-3">
-            <h3 className="text-lg font-bold text-white">AgentHub</h3>
+            <h3 className="text-lg font-bold text-white">BT MedAI</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Intelligent AI agents powered by Next.js, FastAPI & OpenAI for every goal.
+              Advanced AI-powered medical consultation platform delivering specialized health guidance across multiple
+              medical disciplines.
             </p>
           </div>
 
           {/* Product */}
           <div className="space-y-4">
-            <h4 className="text-white font-semibold text-sm uppercase tracking-wide">Product</h4>
+            <h4 className="text-white font-semibold text-sm uppercase tracking-wide">Platform</h4>
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/#agents"
-                  className="text-gray-400 hover:text-red-500 transition-colors duration-300 text-sm"
+                  href="/#specialists"
+                  className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 text-sm"
                 >
-                  Explore Agents
+                  Medical Specialists
                 </Link>
               </li>
               <li>
-                <Link href="/chat" className="text-gray-400 hover:text-red-500 transition-colors duration-300 text-sm">
-                  Open Chat
+                <Link href="/chat" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 text-sm">
+                  Consultations
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/#contact"
-                  className="text-gray-400 hover:text-red-500 transition-colors duration-300 text-sm"
+                  href="/#specialists"
+                  className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 text-sm"
                 >
-                  Contact
+                  Health Services
                 </Link>
               </li>
             </ul>
@@ -51,26 +52,26 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/chat"
-                  className="text-gray-400 hover:text-red-500 transition-colors duration-300 text-sm"
+                  href="/#specialists"
+                  className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 text-sm"
                 >
-                  Chat
+                  Agents
                 </Link>
               </li>
               <li>
                 <Link
                   href="/#contact"
-                  className="text-gray-400 hover:text-red-500 transition-colors duration-300 text-sm"
+                  className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 text-sm"
                 >
                   Contact
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/#agents"
-                  className="text-gray-400 hover:text-red-500 transition-colors duration-300 text-sm"
+                  href="/chat"
+                  className="text-gray-400 hover:text-cyan-400 transition-colors duration-300 text-sm"
                 >
-                  Agents
+                  Chat
                 </Link>
               </li>
             </ul>
@@ -82,16 +83,16 @@ export default function Footer() {
             <div className="flex gap-4">
               <a
                 href="mailto:bashartc13@gmail.com"
-                className="p-3 rounded-lg bg-red-600/10 border border-red-600/30 hover:border-red-600 text-red-500 hover:text-red-400 hover:shadow-lg hover:shadow-red-600/30 transition-all duration-300"
+                className="p-3 rounded-lg bg-cyan-500/10 border border-cyan-500/30 hover:border-cyan-500 text-cyan-500 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
                 title="Email"
               >
                 <FaEnvelope size={18} />
               </a>
               <a
-                href="https://github.com/bashartech"
+                href="https://github.com/bashartech/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-red-600/10 border border-red-600/30 hover:border-red-600 text-red-500 hover:text-red-400 hover:shadow-lg hover:shadow-red-600/30 transition-all duration-300"
+                className="p-3 rounded-lg bg-cyan-500/10 border border-cyan-500/30 hover:border-cyan-500 text-cyan-500 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
                 title="GitHub"
               >
                 <FaGithub size={18} />
@@ -100,7 +101,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/m-bashar-sheikh/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-red-600/10 border border-red-600/30 hover:border-red-600 text-red-500 hover:text-red-400 hover:shadow-lg hover:shadow-red-600/30 transition-all duration-300"
+                className="p-3 rounded-lg bg-cyan-500/10 border border-cyan-500/30 hover:border-cyan-500 text-cyan-500 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
                 title="LinkedIn"
               >
                 <FaLinkedin size={18} />
@@ -109,7 +110,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-lg bg-red-600/10 border border-red-600/30 hover:border-red-600 text-red-500 hover:text-red-400 hover:shadow-lg hover:shadow-red-600/30 transition-all duration-300"
+                className="p-3 rounded-lg bg-cyan-500/10 border border-cyan-500/30 hover:border-cyan-500 text-cyan-500 hover:text-cyan-400 hover:shadow-lg hover:shadow-cyan-500/30 transition-all duration-300"
                 title="Twitter"
               >
                 <FaTwitter size={18} />
@@ -120,7 +121,7 @@ export default function Footer() {
             <div className="mt-4">
               <a
                 href="mailto:bashartc13@gmail.com"
-                className="inline-block text-sm text-gray-400 hover:text-red-500 transition-colors duration-300 break-all"
+                className="inline-block text-sm text-gray-400 hover:text-cyan-400 transition-colors duration-300 break-all"
               >
                 bashartc13@gmail.com
               </a>
@@ -129,20 +130,20 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-red-600/20 my-8"></div>
+        <div className="border-t border-cyan-500/20 my-8"></div>
 
         {/* Bottom */}
-        <div className="flex flex-col md:flex-row justify-center items-center text-center md:text-left gap-4 text-sm text-gray-500">
-          <p>&copy; {currentYear} AgentHub. All rights reserved. Powered by BT AgentHub.</p>
-          {/* <div className="flex gap-4">
-            <Link href="/terms" className="hover:text-red-500 transition-colors duration-300">
+        <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4 text-sm text-gray-500">
+          <p>&copy; {currentYear} BT MedAI. All rights reserved. Trusted medical AI platform.</p>
+          <div className="flex gap-4">
+            <Link href="/terms" className="hover:text-cyan-400 transition-colors duration-300">
               Terms of Service
             </Link>
             <span>·</span>
-            <Link href="/privacy" className="hover:text-red-500 transition-colors duration-300">
+            <Link href="/privacy" className="hover:text-cyan-400 transition-colors duration-300">
               Privacy Policy
             </Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </footer>

@@ -2,69 +2,72 @@
 'use client';
 
 import AgentCard from '@/components/AgentCard';
-import { FaRobot, FaPlane, FaGraduationCap, FaMedkit, FaBriefcase, FaCode, FaSearch, FaUser, FaBuilding } from 'react-icons/fa';
+import { 
+  FaPlane, FaHeartbeat, FaSpa, FaEarListen, FaEye, FaBone, FaTooth, FaBaby, FaPrescriptionBottleMedical, FaAppleWhole, FaUserMd 
+} from 'react-icons/fa';
 
 const agents = [
   {
-    name: "BUSINESS PLANNER Agent",
-    description: "Helps you strategize, plan, and execute your business goals with intelligent insights.",
-    icon: <FaRobot size={30} />,
-    link: "/chat?agent=business-planner",
+    name: "Cardiologist Agent",
+    description: "Expert in heart health, diagnosing and guiding on cardiovascular conditions.",
+    icon: <FaHeartbeat size={30} />,
+    link: "/chat?agent=cardiologist-specialist",
   },
   {
-    name: "FLIGHT BOOKING AGENT",
-    description: "Finds the best flights, deals, and manages your travel itineraries effortlessly.",
-    icon: <FaPlane size={30} />,
-    link: "/chat?agent=flight-booking",
+    name: "Dermatologist Agent",
+    description: "Specializes in skin, hair, and nail conditions, offering expert care and advice.",
+    icon: <FaSpa size={30} />,
+    link: "/chat?agent=dermatologist-specialist",
   },
   {
-    name: "TUTOR AGENT",
-    description: "Provides personalized learning experiences and assistance across various subjects.",
-    icon: <FaGraduationCap size={30} />,
-    link: "/chat?agent=tutor",
+    name: "ENT Specialist Agent",
+    description: "Focuses on ear, nose, and throat disorders, providing diagnosis and treatment guidance.",
+    icon: <FaEarListen size={30} />,
+    link: "/chat?agent=ent-specialist",
   },
   {
-    name: "MEDICAL AGENT",
-    description: "Offers preliminary medical information, symptom analysis, and health advice.",
-    icon: <FaMedkit size={30} />,
-    link: "/chat?agent=medical",
+    name: "Eye Specialist / Optometrist Agent",
+    description: "Expert in vision problems, eye diseases, and optical care, including glasses and lenses.",
+    icon: <FaEye size={30} />,
+    link: "/chat?agent=eye-specialist",
   },
   {
-    name: "HEALTH CARE AGENT",
-    description: "Assists with managing healthcare plans, appointments, and health-related queries.",
-    icon: <FaMedkit size={30} />,
-    link: "/chat?agent=health-care",
+    name: "Orthopedic Agent",
+    description: "Specializes in bones, joints, muscles, and spine, guiding on injuries and musculoskeletal health.",
+    icon: <FaBone size={30} />,
+    link: "/chat?agent=orthopedic-specialist",
   },
   {
-    name: "JOB SEARCH AGENT",
-    description: "Scans job markets, tailors resumes, and helps you land your dream job.",
-    icon: <FaBriefcase size={30} />,
-    link: "/chat?agent=job-search",
+    name: "Dentist / BDS Agent",
+    description: "Provides expert oral health care, dental pain management, and hygiene guidance.",
+    icon: <FaTooth size={30} />,
+    link: "/chat?agent=dentist-specialist",
   },
   {
-    name: "CODE REVIEW AGENT",
-    description: "Analyzes your code for bugs, best practices, and suggests improvements.",
-    icon: <FaCode size={30} />,
-    link: "/chat?agent=code-review",
+    name: "Pediatrician Agent",
+    description: "Specializes in the health of infants, children, and teenagers, offering comprehensive medical care.",
+    icon: <FaBaby size={30} />,
+    link: "/chat?agent=pediatrician-specialist",
   },
   {
-    name: "DEEP SEARCH AGENT ON ANY TOPIC",
-    description: "Conducts comprehensive research and provides in-depth information on any given topic.",
-    icon: <FaSearch size={30} />,
-    link: "/chat?agent=deep-search",
+    name: "Pharmacy Assistant Agent",
+    description: "Provides information on medicines, drug categories, safe usage, and potential interactions.",
+    icon: <FaPrescriptionBottleMedical size={30} />,
+    link: "/chat?agent=pharmacy-assistant",
   },
   {
-    name: "AI Personal Life Manager Agent",
-    description: "Manages your daily tasks, schedules, and personal goals to optimize your life.",
-    icon: <FaUser size={30} />,
-    link: "/chat?agent=personal-life-manager",
+    name: "Nutritionist Agent",
+    description: "Certified expert in diet planning, weight management, and nutrition for various health goals.",
+    icon: <FaAppleWhole size={30} />,
+    link: "/chat?agent=nutritionist-specialist",
   },
   {
-    name: "AI Education Institute Automation Agent",
-    description: "Automates administrative tasks and enhances operational efficiency for educational institutions.",
-    icon: <FaBuilding size={30} />,
-    link: "/chat?agent=education-automation",
+    name: "General Physician Agent",
+    description: "Offers primary care for everyday medical conditions, diagnosis, and general health advice.",
+    icon: <FaUserMd size={30} />,
+    link: "/chat?agent=general-physician",
   },
+
 ];
 
 export default function AgentsPage() {

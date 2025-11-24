@@ -210,3 +210,24 @@ Agents inside:
 Who needs it:
 
 Startups, SMEs, agencies, enterprise companies.
+
+
+
+1. Cardiologist Agent (Heart Specialist)
+2. Dermatologist Agent (Skin Specialist)
+3. ENT Specialist Agent (Ear, Nose, Throat)
+4. Eye Specialist / Optometrist Agent (Optical Agent)
+5. Orthopedic Agent (Bone & Joint Specialist – DPT Compatible)
+6. Dentist / BDS Agent
+7. Pediatrician Agent (Children's Doctor)
+8. Pharmacy Assistant Agent
+9. Nutritionist Agent
+10.General Physician Agent
+
+
+
+
+
+
+
+

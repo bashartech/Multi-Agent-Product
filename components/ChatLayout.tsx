@@ -66,6 +66,9 @@
 
 // export default ChatLayout;
 
+
+
+
 "use client"
 
 import type React from "react"
@@ -84,7 +87,7 @@ const ChatLayout: React.FC<ChatLayoutProps> = ({ sidebar, children }) => {
     <div className="flex h-screen bg-slate-950 text-white overflow-hidden">
       {/* Mobile Sidebar Toggle Button */}
       <button
-        className="fixed bottom-6 left-6 z-40 p-3 rounded-lg bg-red-600 hover:bg-red-700 md:hidden shadow-xl shadow-red-600/40 transition-all duration-300 hover:shadow-2xl hover:shadow-red-600/60"
+        className="fixed bottom-6 left-6 z-40 p-3 rounded-lg bg-cyan-500 hover:bg-cyan-700 md:hidden shadow-xl shadow-cyan-600/40 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-600/60"
         onClick={() => setIsSidebarOpen(!isSidebarOpen)}
         aria-label="Toggle sidebar"
       >
