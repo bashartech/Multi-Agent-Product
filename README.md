@@ -1,95 +1,117 @@
 # BT AgentHub
 
-Your Intelligent Companion for Every Goal.
+Your Intelligent Companion for Every Goal. BT AgentHub brings you powerful AI agents powered by Next.js, FastAPI, and the OpenAI Agent SDK.
 
 ## Overview
-BT AgentHub is an ultra-modern, dark-themed web application designed to provide powerful AI agents. Built with Next.js, TypeScript, and Tailwind CSS for a responsive and visually stunning frontend, and powered by FastAPI with the OpenAI Agent SDK for intelligent backend AI logic.
 
-## Features
+BT AgentHub is an ultra-modern, dark neon-tech themed web application designed to provide specialized AI agent consultations. The platform features a responsive user interface built with Next.js, React, and Tailwind CSS, and a robust backend powered by FastAPI that orchestrates various AI agents using the OpenAI Agent SDK. Currently, the platform specializes in medical consultations, offering a range of virtual healthcare specialists.
 
-### Overall Design Style
-- **Theme**: Ultra-modern dark mode using deep blacks and charcoal greys (#000, #0A0A0A, #111, #161616).
-- **Accent Colors**: Neon orange-red, crimson, or electric red for highlights, glows, and motion.
-- **Visuals**: Smooth gradient blends, minimal noise textures, cyber-styled line graphics.
-- **Typography**: Futuristic, bold sans-serif fonts (Inter, Space Grotesk, Neue Montreal) with clean white headings and neon-highlighted keywords.
-- **Motion Graphics**: Animated glowing lines, circuit-style outlines, smooth hover transitions with elevation and glow, slow background parallax, subtle neon pulsing on interactive elements.
-- **UI Component Style**: Dark glass-cards with soft translucent backgrounds, deep shadows, neon border strokes, and glow-on-hover effects.
-- **Responsiveness**: Fully responsive across Mobile, Tablet, Laptop, and 4K desktop, with smooth transitions and reflowing grids.
-- **Agent Indicator**: Small animated glowing icon indicating agent’s specialty on every agent card.
+## 🎨 Design and UI/UX
 
-### Website Structure
+The design follows a premium dark neon-tech aesthetic:
 
-#### 1. Header
-- Black/transparent sticky header with blur.
-- **Logo**: BT AgentHub
-- **Navigation**: Home, Agents, Chat, Contact.
-- **CTA Button**: Glowing gradient (neon red/orange).
+*   **Theme:** Deep blacks, charcoal greys, with neon orange-red/cyan/teal accents for highlights and glows.
+*   **Typography:** Futuristic sans-serif fonts (`Inter`, `Space Grotesk`, `Neue Montreal`).
+*   **Motion:** Subtle animations, glowing lines, smooth hover effects, and neon pulsing elements.
+*   **Components:** Dark "glass-cards" with translucent backgrounds, deep shadows, and neon borders.
+*   **Responsiveness:** Fully optimized for mobile, tablet, laptop, and 4K desktop screens.
 
-#### 2. Hero Section
-- **Left Side**:
-    - Bold white hero title: “Your Intelligent Companion for Every Goal.”
-    - Subheadline: “BT AgentHub brings you powerful AI agents powered by Next.js, FastAPI, and the OpenAI Agent SDK.”
-    - CTA buttons: Explore Agents + Open Chat
-- **Right Side**:
-    - Neon abstract tech-symbol graphics with slow glowing movement and parallax motion.
+## 🏠 Key Features
 
-#### 3. Agents Section
-- Modern grid of neon-themed dark cards.
-- **Each Agent Card**:
-    - Icon or micro glow animation showing special capability.
-    - Agent name.
-    - Short 2-line description.
-    - Hover effect: glow, border highlight, motion.
-- **Agents to Include**:
-    - BUSINESS PLANNER Agent
-    - FLIGHT BOOKING AGENT
-    - TUTOR AGENT
-    - MEDICAL AGENT
-    - HEALTH CARE AGENT
-    - JOB SEARCH AGENT
-    - CODE REVIEW AGENT
-    - DEEP SEARCH AGENT ON ANY TOPIC
-    - AI Personal Life Manager Agent
-    - AI Education Institute Automation Agent
-- Each card redirects to a unique chat experience for that agent.
+### Homepage
 
-#### 4. Chat Page (Superior UI/UX)
-- Highly modern, futuristic, premium chat interface.
-- **Requirements**:
-    - 3D-style floating input box with neon bottom glow.
-    - Smooth message bubbles with soft shadows and glowing separators.
-    - Animated typing indicator with neon pulse.
-    - Sidebar with agent avatar + glowing outline.
-    - Animated transitions between messages (smooth fade and slide).
-- **Layout**:
-    - **Left Sidebar**: List of all agents (with glowing hover state). Collapses into a bottom drawer on mobile.
-    - **Main Chat Area**: Dark, elegant conversation flow.
-    - **Top Bar**: Agent title + glowing status dot.
+*   **Header:** Sticky, black/transparent header with logo, navigation links (Home, Specialists, Chat, Contact), and a "Get Started" CTA button.
+*   **Hero Section:** Prominent title ("Advanced Medical AI Care Specialists"), compelling subheadline, and interactive CTA buttons. Features abstract tech graphics and subtle animations.
+*   **Agents Section:** A dynamic grid of specialized AI medical agent cards. Each card displays an icon, agent name, short description, and leads to a dedicated chat experience.
+    *   **Medical Agents:** Cardiologist, Dermatologist, ENT, Eye, Orthopedic, Dentist, Pediatrician, Pharmacy Assistant, Nutritionist, General Physician.
+*   **Contact Section:** Minimalist card design displaying contact email (`bashartc13@gmail.com`) with glowing icons.
+*   **Footer:** Comprehensive footer with brand info, navigation, social links (GitHub, LinkedIn, Email), copyright, and policy links.
 
-#### 5. Contact Section
-- Minimal dark card design.
-- **Email**: bashartc13@gmail.com
-- Soft glowing contact icons.
+### Chat Page
 
-### Color Palette
-- **Background**: #000000, #0A0A0A, #111111
-- **Sub-panels**: #161616, #1D1D1D
-- **Accent (Glow)**: #FF3300, #FF3B20, #FF2400
-- **Text Main**: #FFFFFF
-- **Text Dimmed**: #BFBFBF
-- **Glow Layer**: rgba(255, 60, 0, 0.6)
+*   **Superior UI/UX:** Designed to offer a highly modern and intuitive chat experience.
+*   **Responsive Layout:** Features a main chat area and a responsive sidebar that lists all agents. On mobile, the sidebar collapses into a bottom drawer.
+*   **Agent Selection:** Users can select an agent from the sidebar or directly access via URL. The active agent is visually highlighted with a pulsing indicator.
+*   **Message Flow:** Smooth message bubbles with distinct styling for user and agent messages. Agent messages support Markdown.
+*   **Input Box:** "3D-style" floating input box with neon glow and a send button.
+*   **Typing Indicator:** Animated pulsing dots indicate when the agent is generating a response.
 
-## Additional Instructions
-- Include scroll animations and micro-interactions.
-- Add gradient borders and slight noise texture.
-- Use neon pulse effects sparingly for futuristic clarity.
-- Maintain a clean, minimal, professional cyber-aesthetic.
+## 💻 Technical Stack
 
-<!-- # CREATE NEXT JS PROJECT
+### Frontend
 
-npx create-next-app@latest test-next-swc --use-npm --yes
+*   **Framework:** Next.js 16
+*   **Library:** React 19
+*   **Styling:** Tailwind CSS 4
+*   **Animations:** Framer Motion (used in components)
+*   **Icons:** Lucide React, React Icons
+*   **Markdown:** React Markdown
 
-or
+### Backend
 
-npm install --no-optional --legacy-peer-deps
-npm install @next/swc-win32-x64-msvc -->
+*   **Framework:** FastAPI (Python)
+*   **AI Agent SDK:** OpenAI Agent SDK
+*   **AI Model:** Gemini 2.5 Flash
+*   **Tooling:**
+    *   `aiohttp`, `httpx`: Asynchronous HTTP requests.
+    *   `tavily-python`: Web search capabilities for agents.
+*   **Database:** SQLite (for agent session management)
+*   **Environment Management:** `dotenv` for API key management.
+
+## 🚀 How It Works
+
+1.  **User Interaction:** Users browse medical AI specialists on the homepage.
+2.  **Agent Selection:** Clicking an agent card or "Start Consultation" navigates to the chat page with the selected agent.
+3.  **Frontend-Backend Communication:** The Next.js frontend sends user messages to the FastAPI backend via a `/chat` endpoint.
+4.  **Agent Orchestration:**
+    *   The backend selects the appropriate AI agent based on the `agent_id` from the frontend.
+    *   If no specific agent is selected, a `triage_agent` attempts to route the query to the best-suited specialist.
+    *   Agents leverage defined `function_tool`s (e.g., `tavily_web_search`, `get_drug_info`, `flight_info`) to gather information or perform actions.
+    *   An `SQLiteSession` maintains conversation context for each user/agent interaction.
+5.  **Response Generation:** The AI agent (powered by Gemini 2.5 Flash) processes the message, uses its tools, and generates a detailed response based on its specialized instructions.
+6.  **Display:** The backend sends the response back to the frontend, which then displays it in the chat interface.
+
+## 🛠️ Setup and Installation
+
+### Prerequisites
+
+*   Node.js (v18 or higher)
+*   Python (v3.11 or higher)
+*   `uv` (Python package manager, recommended)
+*   `GEMINI_API_KEY` and `TAVILY_API_KEY` (environment variables)
+
+### Frontend Setup
+
+1.  Navigate to the project root: `cd BT-AgentHub-main`
+2.  Install dependencies: `npm install`
+3.  Run the development server: `npm run dev`
+    *   The frontend will be available at `http://localhost:3000` (or similar).
+
+### Backend Setup
+
+1.  Navigate to the backend directory: `cd backend`
+2.  Create a virtual environment: `python -m venv .venv`
+3.  Activate the virtual environment:
+    *   Windows: `.\.venv\Scripts\activate`
+    *   macOS/Linux: `source ./.venv/bin/activate`
+4.  Install dependencies using `uv` (as per `pyproject.toml`): `uv pip install -r requirements.txt` (assuming requirements.txt is generated by uv.lock or equivalent)
+5.  Create a `.env` file in the `backend` directory and add your API keys:
+    ```
+    GEMINI_API_KEY="YOUR_GEMINI_API_KEY"
+    TAVILY_API_KEY="YOUR_TAVILY_API_KEY"
+    NEXT_PUBLIC_FRONTEND_URL="http://localhost:3000" # Or your deployed frontend URL
+    ```
+6.  Run the FastAPI server: `uvicorn main:app --reload`
+    *   The backend will be available at `http://localhost:8000` (or similar).
+
+## 🚀 Deployment
+
+The project is designed for deployment using platforms like Vercel for the Next.js frontend and Railway (or similar) for the FastAPI backend. Ensure environment variables (`GEMINI_API_KEY`, `TAVILY_API_KEY`, `NEXT_PUBLIC_FRONTEND_URL`) are correctly configured in your deployment environment.
+
+## 🤝 Contributing
+
+(Add contribution guidelines here if applicable)
+
+## 📄 License
+
+(Add license information here if applicable)

@@ -52,7 +52,7 @@ export default function ChatPage() {
     setIsLoading(true)
 
     try {
-      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000"
+      const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL
 
       const response = await fetch(`${backendUrl}/chat`, {
         method: "POST",
